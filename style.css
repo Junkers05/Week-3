@@ -1,251 +1,38 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
-#bungkus {
-    width: 1000px;
-    margin: 20px auto 0;
-}
-
-
-/* =========================
-   TOP
-   ========================= */
-
-#top {
-    display: flex;
-    justify-content: space-between;
-}
-
-#logo {
-    margin-bottom: 20px;
+@media (min-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
 }
 
 #logo img {
     width: 80px;
 }
 
-#menu {
-    margin-top: 50px;
-}
-
-#menu ul {
-    margin: 0;
-    padding: 0;
-}
-
-#menu ul li {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-#menu ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 30px 0;
-}
-
-#menu ul li a:hover,
-#menu ul li a.active {
-    border-bottom: 5px solid;
-}
-
-
-/* =========================
-   BANNER
-   ========================= */
-
-#banner {
-    height: 500px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-#banner img {
-    width: 100%;
-}
-
-
-/* =========================
-   HIGHLIGHT
-   ========================= */
-
-#highlight {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-
-#highlight .box {
-    width: 320px;
-    height: 180px;
-    background: grey;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#highlight .box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* =========================
-   CONTENT / SUBTITLE
-   ========================= */
-
-#content {
-    display: flex;
-    margin-top: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.content-image {
-    width: 30%;
-    overflow: hidden;
-}
-
-.content-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.content-text {
-    width: 60%;
-    padding-left: 30px;
-}
-
-.content-text h2 {
-    margin-top: 10px;
-}
-
-.content-text p {
-    font-size: 13px;
-}
-
-
-/* =========================
-   CLIENT
-   ========================= */
-
-#client {
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-#client h4 {
-    margin: 10px 0;
-}
-
-.client-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.client-list img {
-    width: 100px;
-    height: 200px;
-    object-fit: contain;
-}
-
-
-/* =========================
-   TESTIMONIAL
-   ========================= */
-
-#testimonial {
-    text-align: center;
-}
-
-#testimonial > h4 {
-    margin: 10px 0;
-}
-
-.testimonial-list {
-    display: flex;
-    justify-content: space-between;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    border-bottom: 3px solid #000;
 }
 
 .testimonial-box {
-    width: 49%;
-    height: 190px;
-    background: grey;
-    border-radius: 10px;
-    padding: 20px;
-    box-sizing: border-box;
+    background-color: #7f7f7f;
 }
 
 .testimonial-box img {
     width: 50px;
     height: 50px;
     object-fit: cover;
-    border-radius: 50%;
 }
-
-.testimonial-box h4 {
-    margin: 5px 0;
-}
-
-.testimonial-box p {
-    font-size: 12px;
-}
-
-
-/* =========================
-   SUBSCRIBE
-   ========================= */
 
 #subscribe {
-    background: deeppink;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 15px;
+    background-color: deeppink;
 }
-
-#subscribe p {
-    margin-top: 0;
-}
-
-#subscribe input {
-    width: 400px;
-    padding: 7px;
-    border: none;
-}
-
-#subscribe button {
-    margin-top: 10px;
-    padding: 7px 20px;
-    border: none;
-}
-
-
-/* =========================
-   FOOTER
-   ========================= */
 
 #footer {
-    background: #333;
-    color: white;
-    padding: 25px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+    background-color: #333333;
     font-size: 12px;
-}
-
-.footer-info p {
-    margin: 5px 0;
-}
-
-.copyright {
-    align-self: center;
 }
