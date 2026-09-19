@@ -1,179 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
-    <title>Hello World</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Rafael World</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<div id="bungkus">
-
-    <!-- LOGO DAN MENU -->
-    <div id="top">
-
-        <div id="logo">
-            <a href="#">
-                <img src="Image/Logo.png">
-            </a>
-        </div>
-
-        <div id="menu">
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-
-    <!-- HOME / BANNER -->
-    <div id="banner">
-        <img src="Image/Highlight_3.png">
-    </div>
-
-
-    <!-- HIGHLIGHT -->
-    <div id="highlight">
-
-        <div class="box">
-            <img src="Image/Highlight_1.png">
-        </div>
-
-        <div class="box">
-            <img src="Image/Highlight_2.png">
-        </div>
-
-        <div class="box">
-            <img src="Image/Home.png">
-        </div>
-
-    </div>
-
-
-    <!-- SUBTITLE -->
-    <div id="content">
-
-        <div class="content-image">
-            <img src="Image/Subtitle.jpg">
-        </div>
-
-        <div class="content-text">
-            <h2>Subtitle Here</h2>
-
-            <p>
-                "Smoking is also a form of deep breathing excercise" ~Mao Zedong
-            </p>
-        </div>
-
-    </div>
-
-
-    <!-- OUR CLIENT -->
-    <div id="client">
-
-        <h4>Our Client</h4>
-
-        <div class="client-list">
-
-            <img src="Image/Client_1.png">
-            <img src="Image/Client_2.png">
-            <img src="Image/Client_3.png">
-            <img src="Image/Client_4.png">
-            <img src="Image/Client_5.png">
-            <img src="Image/Client_6.png">
-
-        </div>
-
-    </div>
-
-
-    <!-- TESTIMONIAL -->
-    <div id="testimonial">
-
-        <h4>Testimonials</h4>
-
-        <div class="testimonial-list">
-
-            <div class="testimonial-box">
-
-                <img src="Image/Testimony_1.png">
-
-                <h4>Jane doe</h4>
-
-                <p>
-                    Aku tentara bohongan, setelah aku tiba di UMN, aku jadi lebih jenius dan bisa bikin senjata nuklir, sekarang aku jadi international criminal paling tajir di jagat raya.
-                </p>
-
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid px-0">
+                <a id="logo" class="navbar-brand" href="#">
+                    <img src="Image/Logo.png" class="img-fluid" alt="Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
 
+        <div id="banner" class="mt-2">
+            <img src="Image/Highlight_3.png" class="img-fluid rounded-3 w-100" alt="Banner" />
+        </div>
 
-            <div class="testimonial-box">
-
-                <img src="Image/Testimony_2.jpg">
-
-                <h4>John doe</h4>
-
-                <p>
-                    Aku tentara cina, setelah aku belajar di UMN, aku sekarang menjadi agen mata-mata paling tajir di jagat raya, sekarang aku lagi mengejar "Jane Doe".
-                </p>
-
+        <div id="highlight" class="row mt-3 g-3">
+            <div class="col-12 col-md-4">
+                <img src="Image/Highlight_1.png" class="img-fluid rounded-3 w-100 h-100 object-fit-cover" alt="Highlight 1" />
             </div>
+            <div class="col-12 col-md-4">
+                <img src="Image/Highlight_2.png" class="img-fluid rounded-3 w-100 h-100 object-fit-cover" alt="Highlight 2" />
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="Image/Home.png" class="img-fluid rounded-3 w-100 h-100 object-fit-cover" alt="Highlight 3" />
+            </div>
+        </div>
 
+        <div id="content" class="row mt-4 pb-4 border-bottom align-items-center">
+            <div class="col-12 col-md-5 content-image">
+                <img src="Image/Subtitle.jpg" class="img-fluid rounded-3 w-100" alt="Subtitle Image" />
+            </div>
+            <div class="col-12 col-md-7 content-text mt-3 mt-md-0">
+                <h2>Subtitle Here</h2>
+                <p class="text-muted">
+                    "Smoking is also a form of deep breathing excercise" ~Mao Zedong
+                </p>
+            </div>
+        </div>
+
+        <div id="client" class="text-center py-4 border-bottom">
+            <h4 class="fw-bold mb-3">Our Client</h4>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3 align-items-center client-list">
+                <div class="col"><img src="Image/Client_1.png" class="img-fluid" alt="Client 1"></div>
+                <div class="col"><img src="Image/Client_2.png" class="img-fluid" alt="Client 2"></div>
+                <div class="col"><img src="Image/Client_3.png" class="img-fluid" alt="Client 3"></div>
+                <div class="col"><img src="Image/Client_4.png" class="img-fluid" alt="Client 4"></div>
+                <div class="col"><img src="Image/Client_5.png" class="img-fluid" alt="Client 5"></div>
+                <div class="col"><img src="Image/Client_6.png" class="img-fluid" alt="Client 6"></div>
+            </div>
+        </div>
+
+        <div id="testimonial" class="text-center py-4">
+            <h4 class="fw-bold mb-3">Testimonials</h4>
+            <div class="row g-3 testimonial-list">
+                <div class="col-12 col-md-6">
+                    <div class="testimonial-box p-4 rounded-3 text-white">
+                        <img src="Image/Testimony_1.png" class="rounded-circle mb-2" alt="John Thor" />
+                        <h4 class="h5 fw-bold">John Doe</h4>
+                        <p class="small mb-0">
+                           Aku tentara bohongan, setelah aku tiba di UMN, aku jadi lebih jenius dan bisa bikin senjata nuklir, 
+                           sekarang aku jadi international criminal paling tajir di jagat raya.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="testimonial-box p-4 rounded-3 text-white">
+                        <img src="Image/Testimony_2.jpg" class="rounded-circle mb-2" alt="Tony Stark" />
+                        <h4 class="h5 fw-bold">Jane Doe</h4>
+                        <p class="small mb-0">
+                            Aku tentara cina, setelah aku belajar di UMN, 
+                            aku sekarang menjadi agen mata-mata paling tajir di jagat raya, sekarang aku lagi mengejar "Jane Doe".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="subscribe" class="p-4 mt-3 rounded-3 text-center text-white">
+            <p class="mb-3 fs-5">Subscribe to our newsletter to get the latest info</p>
+            <div class="d-flex flex-column align-items-center">
+                <input type="email" class="form-control w-auto mb-2" style="min-width: 300px;" placeholder="Enter your email here...">
+                <button class="btn btn-light btn-sm px-4">Subscribe</button>
+            </div>
+        </div>
+
+        <div id="footer" class="p-4 mt-3 rounded-3 text-white d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="footer-info text-center text-md-start mb-3 mb-md-0">
+                <p class="fw-bold mb-1">PT. Tajir Mampus Corporation Inc.</p>
+                <p class="mb-1">
+                    Dark Science Boulevard<br>
+                    Blok A1 No. 45<br>
+                    Gading Serpong, Tangerang
+                </p>
+                <p class="mb-0">Tel. (021) 123456789</p>
+            </div>
+            <div class="copyright text-center text-md-end">
+                Copyright © 2022 | All rights reserved
+            </div>
         </div>
 
     </div>
 
-
-    <!-- SUBSCRIBE -->
-    <div id="subscribe">
-
-        <p>
-            Subscribe to our newsletter to get the latest info
-        </p>
-
-        <input type="text" placeholder="Enter your email here...">
-
-        <br>
-
-        <button>Subscribe</button>
-
-    </div>
-
-
-    <!-- FOOTER -->
-    <div id="footer">
-
-        <div class="footer-info">
-
-            <p>
-                PT. Tajir Mampus Corporation Inc.
-            </p>
-
-            <p>
-                Dark Science Boulevard<br>
-                Blok A1 No. 45<br>
-                Gading Serpong, Tangerang
-            </p>
-
-            <p>
-                Tel. (021) 123456789
-            </p>
-
-        </div>
-
-        <div class="copyright">
-            Copyright © 2022 | All rights reserved
-        </div>
-
-    </div>
-
-</div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYs0g+0Mhup+ILRH9SENBOOLRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
